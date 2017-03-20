@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework:spring-expression:5.0.0.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/workspace/mvn/org/springframework/spring-expression/5.0.0.BUILD-SNAPSHOT/spring-expression-5.0.0.BUILD-20170313.193951-775.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/workspace/mvn/org/springframework/spring-expression/5.0.0.BUILD-SNAPSHOT/spring-expression-5.0.0.BUILD-20170313.193951-775-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/workspace/mvn/org/springframework/spring-expression/5.0.0.BUILD-SNAPSHOT/spring-expression-5.0.0.BUILD-20170313.193951-775-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

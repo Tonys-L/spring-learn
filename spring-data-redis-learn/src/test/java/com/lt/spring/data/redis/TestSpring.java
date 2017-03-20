@@ -1,7 +1,5 @@
 package com.lt.spring.data.redis;
 
-import java.util.Arrays;
-
 import org.junit.Test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
@@ -26,6 +24,7 @@ public class TestSpring {
 		xmlBeanDefinitionReader.loadBeanDefinitions(classPathResource);
 		Person person = defaultListableBeanFactory.getBean("person",Person.class);
 		System.out.println(person);
+
 	}
 
 	@Test

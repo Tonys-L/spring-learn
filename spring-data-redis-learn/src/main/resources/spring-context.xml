@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<description>spring</description>
+	<bean id="person" class="com.lt.spring.data.redis.Person" >
+		<description>sss</description>
+		<meta key="sss" value="sss"/>
+		<property name="firstname" value="ssss"/>
+		<property name="lastname" value="ddddd"/>
+	</bean>
+</beans>

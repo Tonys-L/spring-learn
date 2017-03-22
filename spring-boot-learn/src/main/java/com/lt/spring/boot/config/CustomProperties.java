@@ -62,7 +62,10 @@ public class CustomProperties {
 		this.subConfig = subConfig;
 	}
 
-	class SubConfig{
+	/**
+	 *SubConfig需要定义成静态
+	 */
+	public static class SubConfig{
 		private String subName;
 		private String remark;
 

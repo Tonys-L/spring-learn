@@ -11,6 +11,7 @@ import org.springframework.boot.context.event.ApplicationPreparedEvent;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.boot.context.event.ApplicationStartingEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 功能：
@@ -24,7 +25,7 @@ import org.springframework.context.ApplicationListener;
 //@Configuration
 //使用exclude 排除自动引入的类
 //@EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class)
-//@ComponentScan
+@ComponentScan("com.lt.spring.boot")
 @SpringBootApplication //等价于 @Configuration @EnableAutoConfiguration @ComponentScan
 //引入XML配置
 //@ImportResource("classpath:XXX.xml")

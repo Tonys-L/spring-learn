@@ -20,6 +20,7 @@ import org.springframework.stereotype.Component;
  * 默认只在application.properties中读取属性
  * 可以用@PropertySource("classpath:/application-redis.properties")指定特定文件
  * 配置@PropertySource后 会在application.properties 和 @PropertySource 指定的文件中读取,如果有同名属性 以application.properties为主
+ * 在application.properties中指定 spring.profiles.active=redis 后，会使用application-redis.properties中的配置覆盖application.properties中的配置
  */
 @ConfigurationProperties(prefix = "custom")
 @PropertySource("classpath:/application-redis.properties")

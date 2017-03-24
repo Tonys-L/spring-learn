@@ -29,6 +29,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication //等价于 @Configuration @EnableAutoConfiguration @ComponentScan
 //引入XML配置
 //@ImportResource("classpath:XXX.xml")
+
 public class Application {
 	Logger logger = LoggerFactory.getLogger(Application.class);
 	public static void main(String[] args) {

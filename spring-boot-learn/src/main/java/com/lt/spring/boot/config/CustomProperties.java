@@ -1,7 +1,6 @@
 package com.lt.spring.boot.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,17 +13,17 @@ import org.springframework.stereotype.Component;
  */
 
 /**
- *使用@ConfigurationProperties 需要在pom中添加 spring-boot-configuration-processor 依赖
- * spring 会在META-INF中生成 spring-configuration-metadata.json文件文件中定义的 CustomProperties的meta-data
+ * 使用@ConfigurationProperties 需要在pom中添加 spring-boot-configuration-processor 依赖
+ * spring 会在META-INF中生成 spring-configuration-metadata.json文件,文件中定义了 CustomProperties的meta-data
  * 在application.properties中输入custom会给出提示(在IDEA中项目需要添加spring支持)
  * 默认只在application.properties中读取属性
  * 可以用@PropertySource("classpath:/application-redis.properties")指定特定文件
  * 配置@PropertySource后 会在application.properties 和 @PropertySource 指定的文件中读取,如果有同名属性 以application.properties为主
  * 在application.properties中指定 spring.profiles.active=redis 后，会使用application-redis.properties中的配置覆盖application.properties中的配置
  */
-@ConfigurationProperties(prefix = "custom")
-@PropertySource("classpath:/application-redis.properties")
 @Component
+@ConfigurationProperties(prefix = "custom")
+//@PropertySource("classpath:/application-redis.properties")
 public class CustomProperties {
 	private String projName;
 	private String author;

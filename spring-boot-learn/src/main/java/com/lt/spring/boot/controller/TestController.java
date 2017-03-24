@@ -1,5 +1,7 @@
 package com.lt.spring.boot.controller;
 
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +26,7 @@ public class TestController {
 	@Autowired
 	private TestService testService;
 	@RequestMapping("hello")
-	public String hello() {
+	public String hello(Date curDate) {
 		log.info("111");
 		System.out.println(testService);
 		return "hello";

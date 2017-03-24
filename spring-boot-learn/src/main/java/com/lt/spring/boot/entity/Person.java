@@ -1,5 +1,7 @@
 package com.lt.spring.boot.entity;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * 功能：
  *
@@ -9,6 +11,7 @@ package com.lt.spring.boot.entity;
  * @company：北京黄羊 Created with IntelliJ IDEA
  */
 public class Person {
+	@NotNull
 	private String firstname;
 	private String lastname;
 

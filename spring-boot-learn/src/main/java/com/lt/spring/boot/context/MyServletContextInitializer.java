@@ -1,5 +1,7 @@
 package com.lt.spring.boot.context;
 
+import java.util.Date;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
@@ -20,6 +22,6 @@ public class MyServletContextInitializer implements ServletContextInitializer {
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
-		logger.info("这里可以初始化ServletContext{}", System.currentTimeMillis());
+		logger.info("这里可以初始化ServletContext{}", new Date());
 	}
 }

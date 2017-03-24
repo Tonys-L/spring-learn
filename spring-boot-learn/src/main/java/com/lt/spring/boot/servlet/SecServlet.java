@@ -1,6 +1,7 @@
-package com.lt.spring.boot.filter;
+package com.lt.spring.boot.servlet;
 
 import java.io.IOException;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -29,5 +30,6 @@ public class SecServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		logger.info("执行Servlet");
+		resp.getWriter().write("SecServlet:" + new Date());
 	}
 }

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.lt.spring.boot.context.MyServletContextInitializer;
-import com.lt.spring.boot.filter.SecServlet;
+import com.lt.spring.boot.servlet.SecServlet;
 
 /**
  * 功能：

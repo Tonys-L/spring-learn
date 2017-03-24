@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 功能：
+ * 功能：Servlet3.0 异步请求
  *
  * @author：LT(286269159@qq.com)
  * @create：2017-03-23 17:03:06

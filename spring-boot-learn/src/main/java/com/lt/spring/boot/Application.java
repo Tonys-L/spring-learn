@@ -10,6 +10,7 @@ import org.springframework.boot.context.event.ApplicationFailedEvent;
 import org.springframework.boot.context.event.ApplicationPreparedEvent;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.boot.context.event.ApplicationStartingEvent;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -29,7 +30,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication //等价于 @Configuration @EnableAutoConfiguration @ComponentScan
 //引入XML配置
 //@ImportResource("classpath:XXX.xml")
-
+//@ServletComponentScan会扫描 添加了Servlet3.0注解的类（@WebServlet, @WebFilter, and @WebListener ），注册为Servlet
+@ServletComponentScan(basePackages = {"com.lt.spring.boot.servlet", "com.lt.spring.boot.filter"})
 public class Application {
 	Logger logger = LoggerFactory.getLogger(Application.class);
 	public static void main(String[] args) {

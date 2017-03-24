@@ -1,8 +1,6 @@
 package com.lt.spring.boot.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.convert.ConversionService;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
@@ -27,10 +25,5 @@ public class SpringMVCConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addFormatters(FormatterRegistry registry) {
 		registry.addConverter(new DateConverter());
-	}
-
-	@Bean
-	public ConversionService conversionService() {
-		return null;
 	}
 }

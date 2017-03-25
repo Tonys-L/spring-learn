@@ -1,7 +1,5 @@
 package com.lt.spring.boot.converter;
 
-import java.text.DateFormat;
-import java.text.ParseException;
 import java.util.Date;
 
 import org.springframework.core.convert.converter.Converter;
@@ -22,11 +20,7 @@ public class DateConverter implements Converter<String,Date> {
 			return null;
 		} else {
 			s = s.replaceAll("-", "/");
-			try {
-				return DateFormat.getDateInstance().parse(s);
-			} catch (ParseException e) {
-				throw new ConversionFailedException("日期转换失败！",e);
-			}
+			return new Date(s);
 		}
 	}
 }

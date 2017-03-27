@@ -24,6 +24,9 @@ public class TestService {
 	private CustomEventPublisher customEventPublisher;
 
 
+	/**
+	 * 发布事件测试
+	 */
 	public void testEvent() {
 		customEventPublisher.publishEvent(new CustomEvent(this, "Content", "Type"));
 	}

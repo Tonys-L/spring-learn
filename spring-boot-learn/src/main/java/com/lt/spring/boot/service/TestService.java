@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lt.spring.boot.dao.TestDao;
+import com.lt.spring.boot.event.CustomEvent;
+import com.lt.spring.boot.event.CustomEventPublisher;
 
 /**
  * 功能：
@@ -17,4 +19,13 @@ import com.lt.spring.boot.dao.TestDao;
 public class TestService {
 	@Autowired
 	private TestDao testDao;
+
+	@Autowired
+	private CustomEventPublisher customEventPublisher;
+
+
+	public void testEvent() {
+		customEventPublisher.publishEvent(new CustomEvent(this, "Content", "Type"));
+	}
+
 }

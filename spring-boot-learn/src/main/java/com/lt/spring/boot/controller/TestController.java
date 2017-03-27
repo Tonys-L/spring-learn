@@ -45,6 +45,12 @@ public class TestController implements MessageSourceAware {
 		return new Person("L", "T");
 	}
 
+	@RequestMapping("event")
+	public String getEvent() {
+		testService.testEvent();
+		return "SUCCESS";
+	}
+
 	@Override
 	public void setMessageSource(MessageSource messageSource) {
 		this.messageSource = messageSource;

@@ -1,5 +1,7 @@
 package com.lt.spring.boot.service;
 
+import java.time.Clock;
+
 import javax.annotation.Resource;
 
 import org.junit.Test;
@@ -26,6 +28,11 @@ public class TestServiceTest {
 	public void testEvent() throws Exception {
 		testService.testEvent();
 		System.out.println(1);
+	}
+
+	public void testJsr310() {
+		Clock clock = Clock.systemUTC();
+		System.out.println(clock);
 	}
 
 }

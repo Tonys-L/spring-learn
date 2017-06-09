@@ -1,7 +1,12 @@
 package com.lt.spring.boot.config;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+
+import com.lt.spring.boot.dao.IDao;
 
 /**
  * 功能：
@@ -29,6 +34,16 @@ public class CustomProperties {
 	private String author;
 	private String version;
 	private SubConfig subConfig;
+	private IDao dao;
+	private Map<String, String> modules = new HashMap<>();
+
+	public Map<String, String> getModules() {
+		return modules;
+	}
+
+	public void setModules(Map<String, String> modules) {
+		this.modules = modules;
+	}
 
 	public String getProjName() {
 		return projName;
@@ -60,6 +75,14 @@ public class CustomProperties {
 
 	public void setSubConfig(SubConfig subConfig) {
 		this.subConfig = subConfig;
+	}
+
+	public IDao getDao() {
+		return dao;
+	}
+
+	public void setDao(IDao dao) {
+		this.dao = dao;
 	}
 
 	/**

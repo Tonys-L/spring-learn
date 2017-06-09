@@ -32,7 +32,7 @@ public class TestExample {
 
 	@Test
 	public void get() {
-		example.getLisk();
+		example.getLink();
 	}
 
 	@Test

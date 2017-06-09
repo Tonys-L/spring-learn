@@ -5,13 +5,13 @@ import org.springframework.stereotype.Repository;
 /**
  * 功能：
  *
- * @author：dell
- * @create：2017-03-11 16:51:48
+ * @author：LT(286269159@qq.com)
+ * @create：2017-06-09 14:57:58
  * @version：2017 Version：1.0
- * @company：北京黄羊 Created with IntelliJ IDEA
+ * @company：创海科技 Created with IntelliJ IDEA
  */
-@Repository("testDao")
-public class TestDao implements IDao {
+@Repository("testDao1")
+public class TestDao1 implements IDao {
 	@Override
 	public String find() {
 		return this.getClass().getName();

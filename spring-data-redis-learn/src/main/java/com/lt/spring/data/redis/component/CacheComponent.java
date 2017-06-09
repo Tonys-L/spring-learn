@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Set;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class CacheComponent{
-	@Autowired
+	@Resource(name = "redisTemplate")
 	private RedisTemplate<String, Object> redisTemplate;
 	private HashOperations<String, String, Object> hashOps;
 	private SetOperations<String, Object> setOps;

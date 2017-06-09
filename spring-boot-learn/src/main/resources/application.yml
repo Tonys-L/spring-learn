@@ -3,13 +3,13 @@ server:
   port: 8003
 ---
 spring:
-  profiles: development
+  profiles: dev
 server:
-  address: 127.0.0.1
+  address: localhost
   port: 8002
 ---
 spring:
-  profiles: production
+  profiles: prod
 server:
-  address: 192.168.1.22
+  address: localhost
   port: 8001

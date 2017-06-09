@@ -2,7 +2,6 @@ package com.lt.spring.boot;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent;
@@ -35,9 +34,9 @@ import org.springframework.context.annotation.ComponentScan;
 public class Application {
 	Logger logger = LoggerFactory.getLogger(Application.class);
 	public static void main(String[] args) {
-		System.setProperty("banner.location", "classpath:banner/banner.txt");
+		//System.setProperty("banner.location", "classpath:banner/banner.txt");
 		SpringApplication application = new SpringApplication(Application.class);
-		application.setBannerMode(Banner.Mode.OFF);
+		//application.setBannerMode(Banner.Mode.OFF);
 		application.addListeners(new MyApplicationStartingEventListener(),
 				new MyApplicationPreparedEventListener(),
 				new MyApplicationEnvironmentPreparedEventListener(),

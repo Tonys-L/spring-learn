@@ -1,7 +1,6 @@
 package com.lt.spring.data.redis.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.CrudRepository;
 
 import com.lt.spring.data.redis.component.CacheComponent;
 import com.lt.spring.data.redis.custom.cache.Cache;

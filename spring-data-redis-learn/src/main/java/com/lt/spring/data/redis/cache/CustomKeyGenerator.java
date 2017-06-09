@@ -17,9 +17,11 @@ import org.springframework.stereotype.Component;
 public class CustomKeyGenerator implements KeyGenerator {
 	public Object generate(Object target, Method method, Object... params) {
 		StringBuilder key = new StringBuilder(target.getClass().getName() + "." + method.getName()+"(");
-		for (Object param : params) {
-			key.append(param);
-			key.append(",");
+		if (params != null) {
+			for (Object param : params) {
+				key.append(param);
+				key.append(",");
+			}
 		}
 		key.deleteCharAt(key.length() - 1);
 		return key.append(")").toString();

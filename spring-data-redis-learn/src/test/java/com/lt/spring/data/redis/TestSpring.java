@@ -1,5 +1,7 @@
 package com.lt.spring.data.redis;
 
+import java.util.Date;
+
 import org.junit.Test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
@@ -29,7 +31,8 @@ public class TestSpring {
 
 	@Test
 	public void test1() {
-		FileSystemXmlApplicationContext fileSystemXmlApplicationContext = new FileSystemXmlApplicationContext("E:\\MyProject\\spring-data-reids-learn\\src\\main\\resources\\spring-context.xml");
+		Date date = new Date("2012/10/10 12:15");
+		FileSystemXmlApplicationContext fileSystemXmlApplicationContext = new FileSystemXmlApplicationContext("E:\\MyProject\\spring-learn\\spring-data-redis-learn\\src\\main\\resources\\spring-context.xml");
 		Person person = (Person) fileSystemXmlApplicationContext.getBean("person");
 	}
 }

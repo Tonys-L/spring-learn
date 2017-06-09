@@ -1,7 +1,6 @@
 package com.lt.spring.data.redis;
 
 import java.net.URL;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -50,8 +49,8 @@ public class Example {
     listOps.leftPush(userId, url.toExternalForm());
   }
 
-  public void getLisk() {
-    List<String> strings = listOps.range("1234333", 0, 100);
+	public void getLink() {
+		List<String> strings = listOps.range("1234333", 0, 100);
     System.out.println(strings.size());
     System.out.println(strings.get(0));
     for (String s : strings) {
@@ -70,7 +69,6 @@ public class Example {
   }
 
   public Person loadHash(String key) {
-    Arrays.parallelPrefix();
     Map<byte[],byte[]> map = hashOperations.entries(key);
     return (Person) hashMapper.fromHash(map);
   }

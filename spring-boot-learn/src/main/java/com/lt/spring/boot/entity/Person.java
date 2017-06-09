@@ -11,6 +11,7 @@ import javax.validation.constraints.NotNull;
  * @company：北京黄羊 Created with IntelliJ IDEA
  */
 public class Person {
+	private boolean bb;
 	@NotNull
 	private String firstname;
 	private String lastname;

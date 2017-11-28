@@ -16,4 +16,9 @@ public class TestDao implements IDao {
 	public String find() {
 		return this.getClass().getName();
 	}
+
+	@Override
+	public String findAll() {
+		return null;
+	}
 }

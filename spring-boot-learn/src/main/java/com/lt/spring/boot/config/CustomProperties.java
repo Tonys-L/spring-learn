@@ -6,8 +6,6 @@ import java.util.Map;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-import com.lt.spring.boot.dao.IDao;
-
 /**
  * 功能：
  *
@@ -34,7 +32,6 @@ public class CustomProperties {
 	private String author;
 	private String version;
 	private SubConfig subConfig;
-	private IDao dao;
 	private Map<String, String> modules = new HashMap<>();
 
 	public Map<String, String> getModules() {
@@ -77,13 +74,6 @@ public class CustomProperties {
 		this.subConfig = subConfig;
 	}
 
-	public IDao getDao() {
-		return dao;
-	}
-
-	public void setDao(IDao dao) {
-		this.dao = dao;
-	}
 
 	/**
 	 *SubConfig需要定义成静态

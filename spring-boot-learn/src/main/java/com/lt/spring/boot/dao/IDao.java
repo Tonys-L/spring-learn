@@ -10,4 +10,6 @@ package com.lt.spring.boot.dao;
  */
 public interface IDao {
 	String find();
+
+	String findAll();
 }

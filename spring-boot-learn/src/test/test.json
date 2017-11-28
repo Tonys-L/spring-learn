@@ -1,0 +1,23 @@
+{
+  "query": {
+    "multi_match": {
+      "query": "任务",
+      "fields": [
+        "name",
+        "content"
+      ]
+    }
+  },
+  "highlight": {
+    "pre_tags": [
+      "<span class='match-keyword'>"
+    ],
+    "post_tags": [
+      "</span>"
+    ],
+    "fields": {
+      "name": {},
+      "content": {}
+    }
+  }
+}

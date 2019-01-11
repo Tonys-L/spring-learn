@@ -6,15 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="reactive-web" />
         <module name="spring-boot" />
         <module name="spring-boot-learn" />
         <module name="spring-data" />
         <module name="spring-data-redis-learn" />
+        <module name="springsource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="reactive-web" target="1.8" />
       <module name="spring-boot-learn" target="1.8" />
       <module name="spring-data-redis-learn" target="1.5" />
+      <module name="springsource" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

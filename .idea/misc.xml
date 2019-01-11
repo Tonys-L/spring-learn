@@ -6,6 +6,8 @@
         <option value="$PROJECT_DIR$/spring-boot-learn/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-reids-learn/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-redis-learn/pom.xml" />
+        <option value="$PROJECT_DIR$/reactive-web/pom.xml" />
+        <option value="$PROJECT_DIR$/springsource/pom.xml" />
       </list>
     </option>
   </component>

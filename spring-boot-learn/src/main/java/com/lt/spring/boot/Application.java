@@ -12,6 +12,7 @@ import org.springframework.boot.context.event.ApplicationStartingEvent;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * 功能：
@@ -31,6 +32,7 @@ import org.springframework.context.annotation.ComponentScan;
 //@ImportResource("classpath:XXX.xml")
 //@ServletComponentScan会扫描 添加了Servlet3.0注解的类（@WebServlet, @WebFilter, and @WebListener ），注册为Servlet
 @ServletComponentScan(basePackages = {"com.lt.spring.boot.servlet", "com.lt.spring.boot.filter"})
+@EnableAspectJAutoProxy
 public class Application {
 	Logger logger = LoggerFactory.getLogger(Application.class);
 	public static void main(String[] args) {

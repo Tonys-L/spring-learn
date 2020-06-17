@@ -31,14 +31,12 @@ public class TestController implements MessageSourceAware {
 	@Autowired
 	private TestService testService;
 	@RequestMapping("hello")
-	public String hello(Date curDate) {
+	public String hello() {
 		log.info(messageSource.getMessage("welcome", new Object[]{"LT"}, "Default", Locale.SIMPLIFIED_CHINESE));
 		ResourceBundle resourceBundle = ResourceBundle.getBundle("locale/message");
 		log.info(resourceBundle.getString("welcome"));
-		System.out.println(testService);
-		if (true) {
-			throw new RuntimeException("dddjsiodfjosadf");
-		}
+		testService.test();
+		setMessageSource(this.messageSource);
 		return "hello";
 	}
 

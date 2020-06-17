@@ -1,5 +1,6 @@
 package com.lt.spring.boot.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,7 @@ import com.lt.spring.boot.event.CustomEventPublisher;
  * @company：北京黄羊 Created with IntelliJ IDEA
  */
 @Service
+@Slf4j
 public class TestService {
 	@Autowired
 	private TestDao testDao;
@@ -29,6 +31,10 @@ public class TestService {
 	 */
 	public void testEvent() {
 		customEventPublisher.publishEvent(new CustomEvent(this, "Content", "Type"));
+	}
+
+	public void test() {
+		log.debug("调用test");
 	}
 
 }

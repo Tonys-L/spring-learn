@@ -19,6 +19,7 @@ public class OrgServiceImpl implements OrgService {
 	private Cache cache;
 	@Autowired
 	private CacheComponent cacheComponent;
+
 	@Override
 	public void addOrg(Org org) {
 		cacheComponent.sAdd("org",org);

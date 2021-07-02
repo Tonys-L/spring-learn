@@ -1,0 +1,21 @@
+{
+  "_all": {
+    "enabled": false
+  },
+  "properties": {
+    "id": {
+      "type": "text"
+    },
+    "name": {
+      "type": "text",
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_max_word"
+    },
+    "content": {
+      "type": "text",
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_max_word"
+    }
+  }
+}
+

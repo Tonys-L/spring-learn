@@ -1,0 +1,4 @@
+#引用MANIFEST.MF中的版本号
+${application.version}123
+${application.formatted-version}v1.0
+${application.title}spring-boot

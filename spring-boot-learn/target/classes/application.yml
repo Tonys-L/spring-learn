@@ -1,0 +1,15 @@
+server:
+  address: localhost
+  port: 8003
+---
+spring:
+  profiles: dev
+server:
+  address: localhost
+  port: 8002
+---
+spring:
+  profiles: prod
+server:
+  address: localhost
+  port: 8001

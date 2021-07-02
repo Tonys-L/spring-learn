@@ -16,4 +16,10 @@ public class User {
     private String username;
     @Column
     private String password;
+
+    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        Class aClass = Class.forName("org.springframework.security.web.access.expression.WebExpressionConfigAttribute");
+        Object object = aClass.newInstance();
+        System.out.println(aClass);
+    }
 }

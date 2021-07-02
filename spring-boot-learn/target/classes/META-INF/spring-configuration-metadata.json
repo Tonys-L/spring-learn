@@ -1,0 +1,48 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties",
+      "name": "custom",
+      "type": "com.lt.spring.boot.config.CustomProperties"
+    },
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties",
+      "name": "custom.sub-config",
+      "sourceMethod": "getSubConfig()",
+      "type": "com.lt.spring.boot.config.CustomProperties$SubConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties",
+      "name": "custom.author",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties",
+      "name": "custom.modules",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties",
+      "name": "custom.proj-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties$SubConfig",
+      "name": "custom.sub-config.remark",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties$SubConfig",
+      "name": "custom.sub-config.sub-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lt.spring.boot.config.CustomProperties",
+      "name": "custom.version",
+      "type": "java.lang.String"
+    }
+  ]
+}

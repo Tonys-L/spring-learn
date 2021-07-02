@@ -29,4 +29,30 @@ public class AppConfig {
 		app.setAuthor(customProperties.getAuthor());
 		return app;
 	}
+
+	@Bean
+	public B b(A a) {
+		return new B(a);
+	}
+
+	@Bean
+	public A a(B b) {
+		return new A(b);
+	}
+
+	public static class A{
+		private B b;
+
+		public A(B b) {
+			this.b = b;
+		}
+	}
+
+	public static class B{
+		private A a;
+
+		public B(A a) {
+			this.a = a;
+		}
+	}
 }

@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/reactive-web/reactive-web.iml" filepath="$PROJECT_DIR$/reactive-web/reactive-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-security/security.iml" filepath="$PROJECT_DIR$/spring-security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-learn/spring-boot-learn.iml" filepath="$PROJECT_DIR$/spring-boot-learn/spring-boot-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data-redis-learn/spring-data-redis-learn.iml" filepath="$PROJECT_DIR$/spring-data-redis-learn/spring-data-redis-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-learn.iml" filepath="$PROJECT_DIR$/.idea/spring-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springsource/spring-source.iml" filepath="$PROJECT_DIR$/springsource/spring-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/springsource/springsource.iml" filepath="$PROJECT_DIR$/springsource/springsource.iml" />
     </modules>
   </component>
